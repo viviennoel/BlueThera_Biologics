@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- PARAMETERS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+
+    <!-- CSS - STYLE & BOOTSTRAP & AOS -->
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- JS - BOOTSTRAP & AOS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!-- SEO and Optimisation -->
+    <title>BlueTech Bio Homepage</title>
+</head>
+
+<body>
+    <!--Modale enter-->
+    <div id="modale_home">
+        <img src="../IMAGES/Home_bg_top.png" alt="Molecular biology" id="homeBg_hover"/>
+    </div>
+
+    <!--The menu on the top-->
+    <div id="menu" class="d-flex justify-content-around" data-aos="fade-down" data-aos-easing="ease-out" data-aos-delay="200" data-aos-duration="1600">
+            <a href="#" alt="Home">Homepage</a>
+            <p>|</p>
+            <a href="HTML/contact.html" alt="Home">Contact us</a>
+        
+    </div>
+
+    <div id="bande_home" class="text-center" data-aos="fade-up" data-aos-easing="ease-out" data-aos-delay="200" data-aos-duration="1600">
+        <h1 class="mb-4 white">BlueThera Biologics</h1>
+        <div class="mb-5" id="logoDiv">
+            <img class="logo" id="logo1" src="../IMAGES/logo_part.png" alt="logo" />
+            <img class="logo" id="logo2" src="../IMAGES/logo_part.png" alt="logo" />
+            <img class="logo" id="logo3" src="../IMAGES/logo_part.png" alt="logo" />
+        </div>
+        
+        <div class="buttons text-center">
+            <a href="#" id="playVideo">Enter to the future</a>
+        </div>
+    </div>
+
+    <!-- BACKGROUND IMAGE TOP HOMEPAGE -->
+    <div id="homeVideo_div" data-aos="fade-up" data-aos-easing="ease-out" data-aos-delay="200" data-aos-duration="1600">
+        <video id="homeVideo" onended="videoEnded()">
+            <source src="../IMAGES/BlueThera.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div id="copyright" class="text-center">
+        <p class="white">Copyright 2020</p>
+    </div>
+
+    <!-- JS ANIMATION ON SCOLL-->
+    <script>AOS.init();</script>
+    <script type="text/javascript" src="JS/Home.js"></script>
+
+</body>
+</html>
